@@ -18,6 +18,8 @@ The cool thing is that I still have a blog that's easy to maintain, where I can 
 
 Enjoy.  From now on you'll get my long-form thoughts here and sometimes replicated on Medium, for my articles over there certainly got more traffic than my old website ever did.
 
+P.S. If anyone's curious as to the inspiration for Shudder's website URL, it was inspired by the Machines of Loving Grace song Killing in the Name Of.  Hence, killingname.  Thought it fit for horror.  Besides, shudder.com wasn't available (although I do like their logo a lot!).
+
 {.center}
 ...
 
