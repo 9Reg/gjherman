@@ -8,7 +8,7 @@ image_alt: A spacecraft image used as the placeholder article image
 
 You ever worked with Wordpress?  If yes, you know my pain.  We give you this theme for free but you gotta pay up the nose for anything that looks reasonable.  You need a cookie banner?  Here's a simple one, but you've got to ensure the legality of your banner text and website.  Does it drop a cookie then ask if that's alright?  Or does it ask first?  (Hint: One of those is not GDPR compliant.)
 
-No cookies, no content delivery networks, no fuss, just licened images with proper attributions to their creators, some html with some human-written text, simple CSS and a hope that my HTML skills haven't atrophied too much.
+No cookies, no content delivery networks outside Europe, no fuss, just licened images with proper attributions to their creators, some html with some human-written text, simple CSS and a hope that my HTML skills haven't atrophied too much.
 
 Years ago I wrote a GDPR cookie whitepaper for my company because many of our customers were just doing it wrong and risking big fines.  Am I going to get fined if my cookie drops on your computer before you've said 'yes'?  Probably not.  But why do I need cookies?  To track your actions on my website?  Why?  I had Google Analytics on my old website and I was happy if I got one or two views in a week, so what does that bring me?  Maintenance headaches.
 
