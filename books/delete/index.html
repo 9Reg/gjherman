@@ -37,10 +37,14 @@
             <img src="../../assets/images/delete-cover.jpg" alt="Proposed cover for Delete">
             <p class="meta">Book three</p>
           </aside>
+          <a href="#premise" class="scroll-prompt delete">
+            <span>> restricted file discovered</span>
+            <span>> click or scroll to access<span class="cursor">_</span></span>
+          </a>
         </div>
       </section>
 
-      <section class="loadtech-section">
+      <section id="premise" class="loadtech-section">
         <div class="loadtech-section-inner loadtech-two-column">
           <article class="loadtech-panel primary-panel">
             <p class="eyebrow">The conclusion</p>
@@ -100,5 +104,25 @@
         </nav>
       </div>
     </footer>
+    <script>
+      const prompt = document.querySelector(".scroll-prompt");
+      const premise = document.querySelector("#premise");
+
+      setTimeout(() => {
+        prompt.classList.add("visible");
+      }, 1000);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            prompt.classList.add("fade-out");
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(premise);
+    </script>
   </body>
 </html>

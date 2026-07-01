@@ -37,10 +37,14 @@
             <img src="../../assets/images/upload-cover.jpg" alt="Proposed cover for Upload">
             <p class="meta">Book two</p>
           </aside>
+          <a href="#premise" class="scroll-prompt upload">
+            <span>> identity fragment located</span>
+            <span>> click or scroll to upload<span class="cursor">_</span></span>
+          </a>
         </div>
       </section>
 
-      <section class="loadtech-section">
+      <section class="loadtech-section" id="premise">
         <div class="loadtech-section-inner loadtech-two-column">
           <article class="loadtech-panel primary-panel">
             <p class="eyebrow">The escalation</p>
@@ -123,5 +127,25 @@
         </nav>
       </div>
     </footer>
+    <script>
+      const prompt = document.querySelector(".scroll-prompt");
+      const premise = document.querySelector("#premise");
+
+      setTimeout(() => {
+        prompt.classList.add("visible");
+      }, 1000);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            prompt.classList.add("fade-out");
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(premise);
+    </script>
   </body>
 </html>
