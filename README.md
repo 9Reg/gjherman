@@ -1,6 +1,6 @@
 # GJ Herman Static Author Site
 
-This is a plain static website for `gjherman.com`. It uses regular HTML and CSS, plus one dependency-free Python script that builds the blog pages from dated folders.
+This is a plain static website for `gjherman.com`. It uses regular HTML and CSS, plus one dependency-free Python script that builds the blog pages from dated folders.  And has no cookies!
 
 ## Local Blog Workflow
 
