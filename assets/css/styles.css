@@ -397,7 +397,7 @@ p.right {
 .book-copy {
   padding: 34px;
   border: 1px solid rgba(23, 23, 23, 0.12);
-  border-left: 6px solid var(--wine);
+  /* border-left: 6px solid var(--wine); */
   border-radius: 6px;
   background: rgba(255, 252, 247, 0.65);
   color: var(--ink);
@@ -521,15 +521,15 @@ p.right {
 }
 
 .scroll-prompt.download {
-  color: rgba(178, 215, 173, 1);
+  color: rgba(151, 197, 236, 1);
 }
 
 .scroll-prompt.upload {
-  color: rgba(204, 182, 250, 1);
+  color: rgba(99, 215, 126, 1);
 }
 
 .scroll-prompt.delete {
-  color: rgba(217, 169, 118, 1);
+  color: rgba(223, 174, 59, 1);
 }
 
 .scroll-prompt:hover {
@@ -558,17 +558,17 @@ p.right {
 
 .loadtech-page.download-page {
   --loadtech-accent: #4b8f93;
-  --loadtech-hot: #a8d8bf;
+  --loadtech-hot: rgba(151, 197, 236, 1);
 }
 
 .loadtech-page.upload-page {
   --loadtech-accent: #7660a8;
-  --loadtech-hot: #d0b5ff;
+  --loadtech-hot: rgba(99, 215, 126, 1);
 }
 
 .loadtech-page.delete-page {
   --loadtech-accent: #9a4858;
-  --loadtech-hot: #e2a66d;
+  --loadtech-hot: rgba(223, 174, 59, 1);
 }
 
 .loadtech-page .site-header {
@@ -650,11 +650,11 @@ p.right {
 .loadtech-copy,
 .loadtech-panel {
   border: 1px solid var(--loadtech-line);
-  border-left: 6px solid var(--loadtech-accent);
+  /* border-left: 6px solid var(--loadtech-accent); */
   border-radius: 6px;
   background: var(--loadtech-panel);
   color: #111516;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(14px);
 }
 
