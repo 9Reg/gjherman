@@ -55,10 +55,20 @@ def parse_frontmatter(raw: str) -> tuple[dict[str, str], str]:
     return metadata, body.strip()
 
 
+LINK_RE = re.compile(r"\[(.+?)\]\(((?:[^()\s]|\([^()]*\))+)\)")
+
+
+def render_link(match: re.Match[str]) -> str:
+    label, url = match.group(1), match.group(2)
+    external = url.startswith("http") and "gjherman.com" not in url
+    extra = ' target="_blank" rel="noopener noreferrer"' if external else ""
+    return f'<a href="{url}"{extra}>{label}</a>'
+
+
 def inline_markdown(text: str) -> str:
     escaped = html.escape(text)
     escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
-    escaped = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', escaped)
+    escaped = LINK_RE.sub(render_link, escaped)
     return escaped
 
 
